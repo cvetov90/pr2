@@ -60,15 +60,15 @@
         var modal = document.getElementById("myModal");
 
         // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+        // var btn = document.getElementById("myBtn");
 
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
+        // btn.onclick = function () {
+        //     modal.style.display = "block";
+        // }
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function () {
@@ -90,6 +90,7 @@
             var emailUser = document.getElementById('email').value;
             document.getElementById("modalText").innerHTML = "Пользователь с email: <span class=\"emailUser\">" + emailUser + "</span>\
              не зарегистрирован.<br><br>Пожалуйста, <a href=\"register.html\">зарегистрируйтесь</a>";
+            modal.style.display = "block";
             event.preventDefault();
             return false;
         })

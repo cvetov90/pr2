@@ -75,6 +75,8 @@
 
         // When the user clicks the button, open the modal 
         btn.onclick = function () {
+            document.getElementById("modalText").innerHTML = "Нам очень жаль :-(. <b>В данный момент регистрация невозможна</b>.\
+            <br><br>Попробуйте зарегистрироваться позже";
             modal.style.display = "block";
         }
 
@@ -92,14 +94,14 @@
 
         // Вставка текста в модальное окно по событию submit
 
-        var myForm = document.getElementById("form");
+        // var myForm = document.getElementById("form");
 
-        myForm.addEventListener('submit', function(event){
-            document.getElementById("modalText").innerHTML = "Нам очень жаль :-(. <b>В данный момент регистрация невозможна</b>.\
-            <br><br>Попробуйте зарегистрироваться позже";
-            event.preventDefault();
-            return false;
-        })     
+        // myForm.addEventListener('submit', function(event){
+        //     document.getElementById("modalText").innerHTML = "Нам очень жаль :-(. <b>В данный момент регистрация невозможна</b>.\
+        //     <br><br>Попробуйте зарегистрироваться позже";
+        //     event.preventDefault();
+        //     return false;
+        // })     
  
     </script>
 
